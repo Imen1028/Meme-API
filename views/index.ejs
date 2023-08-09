@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Use an API</title>
+</head>
+<body>
+    <div class="container">
+        <!-- IF there is an error, show the user the error message. -->
+        <% if(locals.error) {%>
+            <p><%= error %></p>
+            <!-- else, show the meme -->
+            <% } else if(locals.meme) {%>
+            <h1 class="meme-title"><%= meme.title %></h1>
+            <div>
+                <img src='<%= meme.url%>' alt="meme">
+                <p class="url"><a href="<%= meme.postLink %>" target="_blank"><%= meme.postLink %></a></p>
+            </div>
+            <% } %>
+        <form action="/get-meme" method="get">
+            <input type="submit" value="Let's Laugh!">
+        </form>
+    </div>
+</body>
+</html>

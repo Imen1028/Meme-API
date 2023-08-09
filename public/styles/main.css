@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body {
+    background-color: #F1F0E8;
+    background-image: url(../img/uganda-knucles.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 115% 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    padding: 15px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > * {
+    margin: 10px 0;
+}
+
+img {
+    width: 500px;
+    box-shadow: 1px 2px 3px rgba(3, 3, 3, 0.3);
+}
+
+input {
+    padding: 10px;
+    background: #ADC4CE;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 105px;
+    font-family: 'Carter One', cursive;
+}
+
+input:hover {
+    background-color: #96B6C5;
+    border: 3px solid #dddddd84;
+}
